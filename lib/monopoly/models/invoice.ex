@@ -4,10 +4,12 @@ defmodule Monopoly.Models.Invoice do
   alias __MODULE__
 
   defstruct [
+    :invoice_id,
     :payee_player_id,
     :payer_player_id,
     :type,
-    :amount
+    :amount,
+    :deed_id
   ]
 
   def new() do

@@ -8,7 +8,9 @@ defmodule Monopoly.Models.Event do
   alias __MODULE__
 
   defstruct [
-
+    :type,
+    :message,
+    invoice_id: nil,
   ]
 
   def new() do

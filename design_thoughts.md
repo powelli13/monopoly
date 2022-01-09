@@ -16,6 +16,8 @@ Do you prevent a player from rolling the dice and moving if other players are co
 
   - Maybe allow for offers and player exchanges/sales to occur. However if a player has the dice while another player is considering an offer, then they will be prompted to roll voiding the pending transaction.
 
+Are all sale offers and exchanges open knowledge to all players? Or can there be private sales?
+
 # Models and Choices
 ## Player
 The Player model holds the board position, account balance and piece identifier for a given player participating in the game. Also used to 

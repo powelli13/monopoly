@@ -6,6 +6,7 @@ defmodule Monopoly.Models.Deed do
 
   defstruct [
     :owner_id,
+    :deed_id,
     :upgrades,
     :name,
     :street,
