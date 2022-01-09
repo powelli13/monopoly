@@ -18,7 +18,7 @@ defmodule Monopoly.Models.Deed do
     upgrade_costs: %{}
   ]
 
-  def new(name, description, purchase_price) do
-    %Property{name: name, description: description, price: purchase_price, owner_id: "bank"}
+  def new(name, street, purchase_price) do
+    %Deed{name: name, street: street, price: purchase_price, owner_id: "bank"}
   end
 end

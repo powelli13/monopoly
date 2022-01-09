@@ -7,7 +7,7 @@ Players will have accounts and could be playing a live game, or checking on move
 ## Player
 The Player model holds the board position, account balance and piece identifier for a given player participating in the game
 
-## Property
+## Deed
 The identifies a purchasable hotel location on the board. It contains information about the purchase price, upgrade costs, rental prices at various upgrade tiers and mortgage value.
 
 ## Deed

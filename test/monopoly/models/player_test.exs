@@ -3,8 +3,8 @@ defmodule Monopoly.Models.PlayerTest do
 
   alias Monopoly.Models.Player
 
-  test "new should start player with 500 balance" do
-    player = Player.new()
+  test "new should start player with 1500 balance" do
+    player = Player.new("abc")
 
     assert player.balance == 1500
   end

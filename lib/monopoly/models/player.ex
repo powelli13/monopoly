@@ -9,11 +9,12 @@ defmodule Monopoly.Models.Player do
     :player_id,
     :board_index,
     :piece_token,
+    is_bankrupt: false,
     balance: 1500,
     deeds: %{}
   ]
 
-  def new() do
-    %Player{}
+  def new(player_id) do
+    %Player{player_id: player_id}
   end
 end
