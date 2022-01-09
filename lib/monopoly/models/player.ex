@@ -11,6 +11,7 @@ defmodule Monopoly.Models.Player do
     :piece_token,
     is_bankrupt: false,
     balance: 1500,
+    cards: [],
     deeds: %{}
   ]
 
