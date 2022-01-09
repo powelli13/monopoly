@@ -9,7 +9,8 @@ defmodule Monopoly.Models.Player do
     :player_id,
     :board_index,
     :piece_token,
-    balance: 1500
+    balance: 1500,
+    deeds: %{}
   ]
 
   def new() do

@@ -5,12 +5,20 @@ defmodule Monopoly.Models.Deed do
   alias __MODULE__
 
   defstruct [
-    :player_id,
-    :property_id,
-    :upgrades
+    :owner_id,
+    :upgrades,
+    :name,
+    :street,
+    :price,
+    :mortgage_value,
+    :unmortgage_price,
+    :house_cost,
+    :hotel_cost,
+    fees: %{},
+    upgrade_costs: %{},
   ]
 
-  def new(player_id) do
-    %Deed{player_id: player_id}
+  def new(name, description, purchase_price) do
+    %Property{name: name, description: description, price: purchase_price, owner_id: "bank"}
   end
 end

@@ -1,5 +1,7 @@
 # Monopoly
 
+Web app used to facilitate multiplayer games of the classic Monopoly.
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
