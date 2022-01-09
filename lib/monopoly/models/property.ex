@@ -10,7 +10,7 @@ defmodule Monopoly.Models.Property do
     :house_cost,
     :hotel_cost,
     fees: %{},
-    upgrade_costs: %{},
+    upgrade_costs: %{}
   ]
 
   def new(name, description, purchase_price) do

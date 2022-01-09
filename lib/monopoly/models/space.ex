@@ -7,7 +7,8 @@ defmodule Monopoly.Models.Space do
 
   defstruct [
     :index,
-    :default_deed
+    default_property: nil,
+
   ]
 
   def new(index) do
