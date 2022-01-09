@@ -8,7 +8,8 @@ defmodule Monopoly.Models.Player do
   defstruct [
     :player_id,
     :board_index,
-    balance: 500
+    :piece_token,
+    balance: 1500
   ]
 
   def new() do

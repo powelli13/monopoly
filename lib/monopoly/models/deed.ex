@@ -1,4 +1,4 @@
-defmodule Monopoly.Models.Ownership do
+defmodule Monopoly.Models.Deed do
   @moduledoc """
   Defines a relationship of a player owning a certain property.
   """
@@ -11,6 +11,6 @@ defmodule Monopoly.Models.Ownership do
   ]
 
   def new(player_id) do
-    %Ownership{player_id: player_id}
+    %Deed{player_id: player_id}
   end
 end

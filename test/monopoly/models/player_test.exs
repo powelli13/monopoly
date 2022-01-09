@@ -6,6 +6,6 @@ defmodule Monopoly.Models.PlayerTest do
   test "new should start player with 500 balance" do
     player = Player.new()
 
-    assert player.balance == 500
+    assert player.balance == 1500
   end
 end

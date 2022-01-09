@@ -8,10 +8,10 @@ Players will have accounts and could be playing a live game, or checking on move
 The Player model holds the board position, account balance and piece identifier for a given player participating in the game
 
 ## Property
-The identifies a purchasable hotel location on the board. It contains information about the purchase price, upgrade costs, rental prices at various upgrade tiers and foreclosure value.
+The identifies a purchasable hotel location on the board. It contains information about the purchase price, upgrade costs, rental prices at various upgrade tiers and mortgage value.
 
-## Ownership
-The ownership is used to signify a Player owning a certain Property. The ownership will maintain if the player has upgraded the property, foreclosed the property.
+## Deed
+A Deed is used to signify a Player owning a certain Property. The ownership will maintain if the player has upgraded the property, foreclosed the property.
 
 ## Invoice
 An invoice is created whenever money transfers between players. If a player lands on another players hotel property and they pay them money, an invoice is created to track this. Using an invoice, rather than simply updating both account balance values, will allow the history of rental transactions at a property to be displayed. It also allows for alterations of the ruleset in the future to be made. For example an Invoice could be marked as outstanding and therefore allow for a player to use an *I Owe You* to another player and take on debt. 
