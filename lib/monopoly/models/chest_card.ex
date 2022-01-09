@@ -1,4 +1,4 @@
-defmodule Monopoly.Models.Card do
+defmodule Monopoly.Models.ChestCard do
   alias __MODULE__
 
   defstruct [
@@ -8,6 +8,6 @@ defmodule Monopoly.Models.Card do
   ]
 
   def new() do
-    %Card{}
+    %ChestCard{}
   end
 end
