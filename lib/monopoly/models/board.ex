@@ -2,7 +2,7 @@ defmodule Monopoly.Models.Board do
   alias __MODULE__
 
   defstruct [
-    spaces: %{},
+    spaces: %{}
   ]
 
   def new() do

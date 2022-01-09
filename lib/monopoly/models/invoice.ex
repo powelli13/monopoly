@@ -6,6 +6,7 @@ defmodule Monopoly.Models.Invoice do
   defstruct [
     :payee_player_id,
     :payer_player_id,
+    :type,
     :amount
   ]
 
