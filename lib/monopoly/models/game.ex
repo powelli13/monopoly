@@ -6,6 +6,8 @@ defmodule Monopoly.Models.Game do
   """
   alias __MODULE__
 
+  # Need to save player turn order
+  # Which players turn it is
   defstruct [
     :game_id,
     :banker,
