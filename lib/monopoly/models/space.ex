@@ -8,7 +8,8 @@ defmodule Monopoly.Models.Space do
   defstruct [
     :index,
     :event,
-    default_property: nil,
+    deed_id: nil,
+    railroad_id: nil
   ]
 
   def new(index) do

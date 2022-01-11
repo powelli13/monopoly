@@ -1,4 +1,4 @@
-defmodule Monopoly.Engine.MovementService do
+defmodule Monopoly.Engine.Movement do
   alias Monopoly.Models.{Game, Player}
 
   def advance_by_dice_roll(%Game{} = game) do
@@ -6,7 +6,8 @@ defmodule Monopoly.Engine.MovementService do
     # Check for collecting money after passing Go
     # Update the position
     # Record movement to Event History
-    # TODO How to execute action after landing on new space??
+    # Create actionable item for player to purchase new property if available
+      # If not owned, then create option for owner to charge rent
   end
 
   defp roll_two_dice() do

@@ -7,6 +7,7 @@ defmodule Monopoly.Models.Offer do
   alias __MODULE__
 
   defstruct [
+    :offer_id,
     :creator_id,
     :recipient_id,
     :deed_id,
