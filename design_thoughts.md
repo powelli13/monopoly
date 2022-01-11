@@ -30,6 +30,9 @@ An invoice is created whenever money transfers between players. If a player land
 
 An invoice can also be used to represent players paying taxes if they land on that square.
 
+## Offer
+An offer is created when one player asks another player to buy or sell a deed. Offers can be made by players in between dice roles.
+
 ## Banker
 The banker is used to determine the finite number of upgrade tokens, house and hotel tokens, that are available for purchase in the inventory.
 

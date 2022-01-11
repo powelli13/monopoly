@@ -1,4 +1,4 @@
-defmodule Monopoly.Services.MovementService do
+defmodule Monopoly.Engine.MovementService do
   alias Monopoly.Models.{Game, Player}
 
   def advance_by_dice_roll(%Game{} = game) do
