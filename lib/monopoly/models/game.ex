@@ -18,6 +18,7 @@ defmodule Monopoly.Models.Game do
     :deeds,
     :active_movement_turn,
     :active,
+    :turns,
     players: %{}
   ]
 
