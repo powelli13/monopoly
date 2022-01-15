@@ -5,9 +5,10 @@ defmodule Monopoly.Models.Turn do
     :player_id,
     :starting_space_index,
     :ending_space_index,
-    :event
+    :doubles
   ]
 
   def new(player_id) do
+    %Turn{player_id: player_id}
   end
 end
