@@ -10,7 +10,7 @@ defmodule Monopoly.Models.Event do
   defstruct [
     :type,
     :message,
-    invoice_id: nil,
+    invoice_id: nil
   ]
 
   def new() do

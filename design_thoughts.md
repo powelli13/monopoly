@@ -52,10 +52,11 @@ The board acts as the collection of spaces and the card decks. It is used to det
 Used to represent the total internal structure of a game of Monopoly. Acts as the coordinator between various structs and constituent pieces of the game.
 
 # Gameplay Events
-Events that occurr while the game progresses which change the state of the game.
+Events that occurr while the game progresses which change the state of the game. A player can make one of two main categories of actions; first they can roll the dice and move their character (or not if they are in jail) this consistutes their turn, second they can offer deed sales or purchases to other players, buy houses for properties etc. these actions take place in between turns during the quasi real time segment of play.
 Movement
 - A player rolls the dice and moves their pawn
   - A player passes GO while moving and collects $200
+  - A player is in jail and must roll doubles or pay to escape
 - A player lands on a space and draws a card from the deck
 - A player lands on an owned, non-mortgaged property and pays the rent rate
 - A player lands on an unowned property and decides to purchase it or not

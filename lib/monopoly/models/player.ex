@@ -10,6 +10,7 @@ defmodule Monopoly.Models.Player do
     :board_index,
     :piece_token,
     state: :moving,
+    turns_in_jail: 0,
     is_bankrupt: false,
     balance: 1500,
     cards: [],

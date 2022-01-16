@@ -9,7 +9,8 @@ defmodule Monopoly.Models.Space do
     :index,
     :event,
     deed_id: nil,
-    railroad_id: nil
+    railroad_id: nil,
+    card_deck: nil
   ]
 
   def new(index) do
