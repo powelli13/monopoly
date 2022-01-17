@@ -1,9 +1,7 @@
 defmodule Monopoly.Models.MovementTurn do
   alias __MODULE__
 
-  defstruct [
-    doubles_count: 0
-  ]
+  defstruct doubles_count: 0
 
   def new() do
     %MovementTurn{}

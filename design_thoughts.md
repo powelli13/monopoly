@@ -71,3 +71,9 @@ Deed Transactions
 Property Auctions
 - A property is up for auction
 - Players make bids on a property in an auction
+
+#TODO
+- Need a good way to model if properties are streets together, same with railroads and utilites
+- Need a Behaviour for properties that can charge
+- Need the GenServer to hold the Game model and receive inputs
+- Need some more database service classes

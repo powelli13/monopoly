@@ -15,4 +15,10 @@ defmodule Monopoly.Engine.DeedTransactions do
 
   def build_hotel(%Game{} = game, player_id, deed_id) do
   end
+
+  def sell_house(%Game{} = game, player_id, deed_id) do
+  end
+
+  def sell_hotel(%Game{} = game, player_id, deed_id) do
+  end
 end

@@ -1,6 +1,6 @@
 defmodule Monopoly.Models.ChanceDeck do
   alias __MODULE__
-  #TODO maybe make a behaviour for card, and a beahviour for decks
+  # TODO maybe make a behaviour for card, and a beahviour for decks
 
   defstruct [
     :cards
@@ -8,5 +8,9 @@ defmodule Monopoly.Models.ChanceDeck do
 
   def new() do
     %ChanceDeck{}
+  end
+
+  def draw_card(%ChanceDeck{} = deck) do
+    deck
   end
 end

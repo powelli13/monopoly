@@ -8,4 +8,8 @@ defmodule Monopoly.Models.ChestDeck do
   def new() do
     %ChestDeck{}
   end
+
+  def draw_card(%ChestDeck{} = deck) do
+    deck
+  end
 end

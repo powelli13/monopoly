@@ -19,6 +19,8 @@ defmodule Monopoly.Models.Game do
     :active_movement_turn,
     :active,
     :turns,
+    :current_turn_player_id,
+    :players_turn_order,
     players: %{}
   ]
 
