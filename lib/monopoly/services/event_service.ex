@@ -1,4 +1,4 @@
-defmodule Monopoly.Services.EventRecorder do
+defmodule Monopoly.Services.EventService do
   @moduledoc """
   Creates or loads events that occur within a given game.
   """
