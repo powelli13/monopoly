@@ -76,3 +76,5 @@ Property Auctions
 - Need a good way to model if properties are streets together, same with railroads and utilites
 - Need a Behaviour for properties that can charge
 - Need some more database service classes
+- Write up foreign keys, indexes and db schema thoughts
+- Write up more functions on the models to handle some small changes specific to that model, and other functions in the Engine pieces
