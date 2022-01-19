@@ -5,10 +5,12 @@ defmodule Monopoly.Models.Railroad do
   alias __MODULE__
 
   defstruct [
-    :owner_id
+    :owner_id,
+    :name,
+    fees: %{}
   ]
 
-  def new() do
-    %Railroad{owner_id: "bank"}
+  def new(name) do
+    %Railroad{owner_id: "bank", name: name}
   end
 end

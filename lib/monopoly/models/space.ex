@@ -10,6 +10,7 @@ defmodule Monopoly.Models.Space do
     :event,
     deed_id: nil,
     railroad_id: nil,
+    utility_id: nil,
     card_deck: nil
   ]
 

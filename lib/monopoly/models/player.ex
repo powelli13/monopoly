@@ -4,6 +4,7 @@ defmodule Monopoly.Models.Player do
   bank balance and owned properties.
   """
   alias __MODULE__
+  alias Monopoly.Models.Deed
 
   defstruct [
     :player_id,
@@ -14,10 +15,22 @@ defmodule Monopoly.Models.Player do
     is_bankrupt: false,
     balance: 1500,
     cards: [],
-    deeds: %{}
+    deeds: %{},
+    railroads: %{}
   ]
 
   def new(player_id) do
     %Player{player_id: player_id}
+  end
+
+  def purchase_deed(%Player{} = player, %Deed{} = deed) do
+    # Ensure player balance does not go below zero
+    # Add deed to the map
+  end
+
+  def sell_deed(%Player{} = player, deed_id, price) do
+    # Ensure that the player had the deed to begin with
+    # Remove deed from the map
+    # Add price to the balance
   end
 end

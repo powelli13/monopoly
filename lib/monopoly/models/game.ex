@@ -16,9 +16,11 @@ defmodule Monopoly.Models.Game do
     :chance_deck,
     :chest_deck,
     :deeds,
+    :railroads,
+    :streets,
     :active_movement_turn,
     :active,
-    :turns,
+    :movement_turns,
     :current_turn_player_id,
     :players_turn_order,
     players: %{}

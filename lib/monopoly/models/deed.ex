@@ -22,4 +22,19 @@ defmodule Monopoly.Models.Deed do
   def new(name, street, purchase_price) do
     %Deed{name: name, street: street, price: purchase_price, owner_id: "bank"}
   end
+
+  def change_owner(%Deed{} = deed, player_id) do
+  end
+
+  def build_house(%Deed{} = deed) do
+  end
+
+  def build_hotel(%Deed{} = deed) do
+  end
+
+  def mortgage_deed(%Deed{} = deed) do
+  end
+
+  def unmortgage_deed(%Deed{} = deed) do
+  end
 end

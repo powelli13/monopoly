@@ -18,6 +18,9 @@ Do you prevent a player from rolling the dice and moving if other players are co
 
 Are all sale offers and exchanges open knowledge to all players? Or can there be private sales?
 
+Can a property be sold between players when there are houses on it?
+  - According to monopolyland, no.
+
 # Models and Choices
 ## Player
 The Player model holds the board position, account balance and piece identifier for a given player participating in the game. Also used to 
