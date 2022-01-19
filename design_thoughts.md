@@ -21,6 +21,9 @@ Are all sale offers and exchanges open knowledge to all players? Or can there be
 Can a property be sold between players when there are houses on it?
   - According to monopolyland, no.
 
+Should players have to 'claim' rent the way they do in the rules?
+  - I would say since this sounds like a tedious player experience, but it is in the official rules.
+
 # Models and Choices
 ## Player
 The Player model holds the board position, account balance and piece identifier for a given player participating in the game. Also used to 

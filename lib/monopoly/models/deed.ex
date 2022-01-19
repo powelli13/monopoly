@@ -38,3 +38,11 @@ defmodule Monopoly.Models.Deed do
   def unmortgage_deed(%Deed{} = deed) do
   end
 end
+
+defimpl Monopoly.Models.Rentable, for: Monopoly.Models.Deed do
+  def charge_rent(owner, renter, property) do
+    # Determine the fee level for the property
+    # create an amount owed invoice from renter to owner
+    property
+  end
+end

@@ -14,3 +14,11 @@ defmodule Monopoly.Models.Railroad do
     %Railroad{owner_id: "bank", name: name}
   end
 end
+
+defimpl Monopoly.Models.Rentable, for: Monopoly.Models.Railroad do
+  def charge_rent(owner, renter, property) do
+    # Determine the fee level based on number of railroads owned by owner
+    # create an amount owed invoice from renter to owner
+    property
+  end
+end
