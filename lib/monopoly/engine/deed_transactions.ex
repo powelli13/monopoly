@@ -33,10 +33,4 @@ defmodule Monopoly.Engine.DeedTransactions do
 
   def sell_hotel(%Game{} = game, player_id, deed_id) do
   end
-
-  def bankrupt_player(%Game{} = game, player_id, owed_player_id) do
-    # Used to bankrupt a player and remove them from the game
-    # owed_player_id can be either another player or the bank
-    # Dissolves the players assets appropriately and eliminates them from the game
-  end
 end
