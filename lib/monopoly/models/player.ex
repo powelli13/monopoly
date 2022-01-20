@@ -33,4 +33,7 @@ defmodule Monopoly.Models.Player do
     # Remove deed from the map
     # Add price to the balance
   end
+
+  def can_afford_cost?(%Player{} = player, cost) do
+  end
 end

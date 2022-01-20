@@ -24,9 +24,11 @@ Can a property be sold between players when there are houses on it?
 Should players have to 'claim' rent the way they do in the rules?
   - I would say since this sounds like a tedious player experience, but it is in the official rules.
 
+During an auction can a player make bids greater than their current funds, and then sell things to make the payment?
+
 # Models and Choices
 ## Player
-The Player model holds the board position, account balance and piece identifier for a given player participating in the game. Also used to 
+The Player model holds the board position, account balance and piece identifier for a given player participating in the game. Also holds money balance, player state, cards and current index on the board.
 
 ## Deed
 The identifies a purchasable hotel location on the board. It contains information about the purchase price, upgrade costs, rental prices at various upgrade tiers and mortgage value. A Deed also indicates the current owner. The Deed will maintain if the player has upgraded the property, foreclosed the property.
@@ -46,19 +48,23 @@ The banker is used to determine the finite number of upgrade tokens, house and h
 Cards represent the event cards that are drawn from the chance or chest decks in the middle of the board. This saves the description and actions to be taken for a given drawn card.
 
 ## Event
-Events are used to record sales, or actions that are taken on players turns. They are used to display a history of what has happened in the game.
+Events are used to record sales, or actions that are taken on players turns. They are used to display a history of what has happened in the game. Initially I was thinking of just having them be messages of what has taken place, they could be expanded to reverse actions to view prior game states.
 
 ## Space 
-Represents a space on the board. The spaces can have actions such as offering a property to a player for purchase, charging a player rent if they land on a property owned by someone else, allowing a player to draw from a deck, going to jail etc.
+Represents a space on the board. The spaces can have actions such as offering a property to a player for purchase, charging a player rent if they land on a property owned by someone else, allowing a player to draw from a deck, going to jail, collection $200 for passing GO etc.
 
 ## Board
-The board acts as the collection of spaces and the card decks. It is used to determine the sequential order of spaces as players move around the board.
+The board acts as the collection of spaces. It is used to determine the sequential order of spaces as players move around the board.
 
 ## Game
-Used to represent the total internal structure of a game of Monopoly. Acts as the coordinator between various structs and constituent pieces of the game.
+Used to bind together internal structure of a game of Monopoly. Acts as the coordinator between various structs and constituent pieces of the game.
+
+## Movement Turn
+Saves the indexes on the board that the player moved when they rolled the dice.
 
 # Gameplay Events
 Events that occurr while the game progresses which change the state of the game. A player can make one of two main categories of actions; first they can roll the dice and move their character (or not if they are in jail) this consistutes their turn, second they can offer deed sales or purchases to other players, buy houses for properties etc. these actions take place in between turns during the quasi real time segment of play.
+
 Movement
 - A player rolls the dice and moves their pawn
   - A player passes GO while moving and collects $200

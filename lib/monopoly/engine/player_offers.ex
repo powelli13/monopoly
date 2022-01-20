@@ -12,4 +12,7 @@ defmodule Monopoly.Engine.PlayerOffers do
 
   def reject_offer(%Game{} = game, offer_id) do
   end
+
+  def create_counter_offer(%Game{} = game, offer_id, creator_id, recipient_id, price) do
+  end
 end

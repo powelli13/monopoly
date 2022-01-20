@@ -11,6 +11,19 @@ defmodule Monopoly.Engine.Movement do
     game
   end
 
+  def collect_go_money(%Game{} = game, player_id) do
+  end
+
+  def offer_player_property_purchase(%Game{} = game, player_id, deed_id) do
+    # Ensure that the property is not already owned
+    # Offer the player to purchase it
+  end
+
+  def prompt_player_to_pay_rent(%Game{} = game, player_id, deed_id) do
+    # Ensure that another player owns the property
+    # Prompt for the player to pay rent
+  end
+
   def advance_from_jail(%Game{} = game) do
     # Prompt the player if they'd like to pay to get out of jail
     # Otherwise require doubles
