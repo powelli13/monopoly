@@ -3,7 +3,9 @@ defmodule Monopoly.Models.Banker do
 
   defstruct house_count: 25,
             hotel_count: 10,
-            deeds: %{}
+            deeds: %{},
+            railroads: %{},
+            utilities: %{}
 
   def new() do
     %Banker{}

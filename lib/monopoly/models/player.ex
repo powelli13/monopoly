@@ -16,7 +16,8 @@ defmodule Monopoly.Models.Player do
     balance: 1500,
     cards: [],
     deeds: %{},
-    railroads: %{}
+    railroads: %{},
+    utilities: %{}
   ]
 
   def new(player_id) do
