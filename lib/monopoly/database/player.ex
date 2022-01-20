@@ -8,5 +8,6 @@ defmodule Monopoly.Database.Player do
     field :piece_token, :string
     field :is_bankrupt, :boolean
     field :balance, :integer
+    belongs_to :game, Monopoly.Database.Game
   end
 end

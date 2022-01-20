@@ -7,6 +7,7 @@ defmodule Monopoly.Database.DeedOwnership do
     field :mortgaged, :boolean
     field :number_houses, :integer
     field :has_hotel, :boolean
+    belongs_to :game, Monopoly.Database.Game
     belongs_to :player, Monopoly.Database.Player
     belongs_to :deed_info, Monopoly.Database.DeedInfo
   end
